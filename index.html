@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class='main'>
+      <nav class='navBar'>
+        <h1>Venkata Sai Prasad Pulaparthi Portfolio</h1>
+        <div class='navigationMenu'>
+          <a href="#aboutMe">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactForm">Let's Connect!</a>
+        <div>
+      </nav>
+      <section class='heroSection'>
+        <img 
+        class='profileImage'
+        src='https://cdn.glitch.global/a663e7b3-196c-42cb-87c5-2546f6e0b438/fotor_2023-3-17_19_23_37.png?v=1679124513239'/>
+        <div class='herosectionDetails'>
+          <h1>Venkata Sai Prasad Pulaparthi</h1>
+          <h3>Full-Stack Developer</h3>
+        </div>
+      </section>
+      <section class='aboutMe' id='aboutMe'>
+        <h1>What I Do...</h1>
+        <p>As a fresher full stack developer, I am equipped with a strong foundation in both front-end and back-end development. With a passion for creating dynamic and user-friendly web applications, I have gained proficiency in languages such as HTML, CSS, JavaScript, and frameworks like React and Node.js. I am eager to apply my skills and collaborate with experienced developers to contribute to innovative projects. My goal is to continuously learn and grow in this rapidly evolving field, while leveraging my problem-solving abilities and attention to detail to deliver high-quality and efficient solutions.</p>
+      </section>
+      <section class='skillsAndProjects'>
+        <div class='skills' id='skills'>
+          <h1 class='cardHeading'>Skills</h1>
+          <img title='HTML' src='https://cdn.glitch.global/a663e7b3-196c-42cb-87c5-2546f6e0b438/html-5-svgrepo-com.svg?v=1686155916177'>
+          <img title='CSS' src='https://cdn.glitch.global/a663e7b3-196c-42cb-87c5-2546f6e0b438/css-3-svgrepo-com.svg?v=1686156027771'>
+          <img title='Javascript' src='https://cdn.glitch.global/a663e7b3-196c-42cb-87c5-2546f6e0b438/javascript-svgrepo-com.svg?v=1686156080175'>
+          <img title='Node.JS' src='https://cdn.glitch.global/a663e7b3-196c-42cb-87c5-2546f6e0b438/nodejs-svgrepo-com.svg?v=1686156154298'>
+          <img title='React' src='https://cdn.glitch.global/a663e7b3-196c-42cb-87c5-2546f6e0b438/react-svgrepo-com.svg?v=1686156204977'>
+          <img title='MongoDB' src='https://cdn.glitch.global/a663e7b3-196c-42cb-87c5-2546f6e0b438/mongodb-svgrepo-com.svg?v=1686156254117'>
+          <img title='Firebase' src='https://cdn.glitch.global/a663e7b3-196c-42cb-87c5-2546f6e0b438/firebase-svgrepo-com.svg?v=1686156306142'>
+          <img title='Redux' src='https://cdn.glitch.global/a663e7b3-196c-42cb-87c5-2546f6e0b438/redux-svgrepo-com.svg?v=1686156349858'>
+        </div>
+        <div class='projects' id='projects'>
+          <h1 class='cardHeading'>Projects</h1>
+          <div class='projectContainer'>
+            <img src='https://cdn.glitch.global/a663e7b3-196c-42cb-87c5-2546f6e0b438/project-svgrepo-com.svg?v=1686156585201'/>
+            <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>Some details of the project.Some details of the project.Some details of the project.</p>
+            </div>
+          </div>
+          <div class='projectContainer'>
+            <img src='https://cdn.glitch.global/a663e7b3-196c-42cb-87c5-2546f6e0b438/project-svgrepo-com.svg?v=1686156585201'/>
+            <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>Some details of the project</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='contactForm' id='contactForm'>
+        <h1>Let's Connect!</h2>
+        <div class='formGroup'>
+          <label for='name'>Enter Full Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name'/>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email</label><br/>
+          <input type='text' id='email' placeholder='Email'/>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
